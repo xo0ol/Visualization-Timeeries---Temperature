@@ -11,15 +11,15 @@ def data_summarize(df, head=10):
     Returns:
         dict: 데이터 요약 정보를 담은 딕셔너리.
     """
-    # # 1. 정보를 저장할 딕셔너리 초기화
-    # summary_dict = {}
+    #  1. 정보를 저장할 딕셔너리 초기화
+    summary_dict = {}
 
-    # # 2. 정보 계산 및 딕셔너리에 추가
-    # summary_dict['shape'] = df.shape
-    # summary_dict['head'] = df.head(head)
-    # summary_dict['describe'] = df.describe()
-    # summary_dict['dtypes'] = df.dtypes
-    # summary_dict['nan_values'] = df.isnull().sum()
+    # 2. 정보 계산 및 딕셔너리에 추가
+    summary_dict['shape'] = df.shape
+    summary_dict['head'] = df.head(head)
+    summary_dict['describe'] = df.describe()
+    summary_dict['dtypes'] = df.dtypes
+    summary_dict['nan_values'] = df.isnull().sum()
 
     # 3. 계산된 정보 출력
     print(f'<shape>{"-"*80}\n{summary_dict["shape"]}')
@@ -31,4 +31,5 @@ def data_summarize(df, head=10):
     # 4. 딕셔너리 반환
 
     # return summary_dict
+
 
