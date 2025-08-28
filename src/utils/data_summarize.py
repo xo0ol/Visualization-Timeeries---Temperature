@@ -30,4 +30,5 @@ def data_summarize(df, head=10):
 
     # 4. 딕셔너리 반환
 
-    return summary_dict
+    # return summary_dict
+
